@@ -4,6 +4,7 @@ import { HiMiniSpeakerWave } from 'react-icons/hi2'
 import { IoCopy } from 'react-icons/io5'
 import { useTranslatetorContext } from '../../contexts/TranslatetorProvider'
 import { getTranslation } from '../../utils/translateService'
+import { IconContext } from 'react-icons'
 
 interface TranslateControlsProps {
   enableTranslate?: boolean
@@ -23,12 +24,14 @@ export function TranslateControls({ enableTranslate }: TranslateControlsProps) {
   return (
     <div className='controls'>
       <div className='actions'>
-        <div onClick={copyToClipboard}>
-          <IoCopy size={25} />
-        </div>
-        <div>
-          <HiMiniSpeakerWave size={25} />
-        </div>
+        <IconContext.Provider value={{ className: 'icon' }}>
+          <div onClick={copyToClipboard}>
+            <IoCopy size={25} />
+          </div>
+          <div>
+            <HiMiniSpeakerWave size={25} />
+          </div>
+        </IconContext.Provider>
       </div>
       {enableTranslate && (
         <button

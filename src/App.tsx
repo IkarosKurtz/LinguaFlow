@@ -8,8 +8,8 @@ function App() {
     <TranslatetorProvider>
       <main className='flex flex-col items-center h-screen p-10'>
         <h1 className='text-6xl font-bold'>LinguaFlow</h1>
-        <section className='h-full flex justify-center items-center w-full'>
-          <article className='grid grid-cols-2 grid-rows-[1fr] h-[60%] w-full gap-5'>
+        <section className='h-full flex justify-center items-center w-[80%]'>
+          <article className='main-container'>
             <TranslateFrom />
             <TranslateTo />
           </article>

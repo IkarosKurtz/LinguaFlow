@@ -28,3 +28,18 @@
     @apply bg-primary-700;
   }
 }
+
+@media (width <=768px) {
+  .actions>div {
+    padding: .4em;
+  }
+
+  .icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .translate-button {
+    @apply text-sm;
+  }
+}
