@@ -1,0 +1,30 @@
+@import '../../index.css';
+
+.controls {
+  @apply flex items-center justify-between;
+}
+
+.actions {
+  @apply flex gap-2 items-center;
+}
+
+.actions>div {
+  color: color-mix(in srgb, var(--color-text-950) 60%, transparent 40%);
+  border: 2px solid color-mix(in srgb, var(--color-secondary-100) 60%, transparent 30%);
+  padding: .5em .7em;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--color-secondary-100) 60%, transparent 30%);
+  }
+}
+
+.translate-button {
+  @apply bg-primary-500 text-text-50 font-semibold px-4 py-2 rounded-lg cursor-pointer;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    @apply bg-primary-700;
+  }
+}

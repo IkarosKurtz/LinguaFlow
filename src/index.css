@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-text-50: #f1f1f3;
+  --color-text-100: #e3e3e8;
+  --color-text-200: #c7c7d1;
+  --color-text-300: #acacb9;
+  --color-text-400: #9090a2;
+  --color-text-500: #74748b;
+  --color-text-600: #5d5d6f;
+  --color-text-700: #464653;
+  --color-text-800: #2e2e38;
+  --color-text-900: #17171c;
+  --color-text-950: #0c0c0e;
+
+  --color-background-50: #f0f2f4;
+  --color-background-100: #e2e6e9;
+  --color-background-200: #c5ccd3;
+  --color-background-300: #a8b3bd;
+  --color-background-400: #8b99a7;
+  --color-background-500: #6e7f91;
+  --color-background-600: #586674;
+  --color-background-700: #424c57;
+  --color-background-800: #2c333a;
+  --color-background-900: #16191d;
+  --color-background-950: #0b0d0f;
+
+  --color-primary-50: #e6eefe;
+  --color-primary-100: #cdddfe;
+  --color-primary-200: #9bbcfd;
+  --color-primary-300: #699afc;
+  --color-primary-400: #3778fb;
+  --color-primary-500: #0557fa;
+  --color-primary-600: #0445c8;
+  --color-primary-700: #033496;
+  --color-primary-800: #022364;
+  --color-primary-900: #011132;
+  --color-primary-950: #010919;
+
+  --color-secondary-50: #e6fdff;
+  --color-secondary-100: #cdfafe;
+  --color-secondary-200: #9bf5fd;
+  --color-secondary-300: #68f0fd;
+  --color-secondary-400: #36ebfc;
+  --color-secondary-500: #04e7fb;
+  --color-secondary-600: #03b8c9;
+  --color-secondary-700: #028a97;
+  --color-secondary-800: #025c64;
+  --color-secondary-900: #012e32;
+  --color-secondary-950: #001719;
+
+  --color-accent-50: #fef7e7;
+  --color-accent-100: #fdeece;
+  --color-accent-200: #fbdd9d;
+  --color-accent-300: #f9cc6c;
+  --color-accent-400: #f7bb3b;
+  --color-accent-500: #f5ab0a;
+  --color-accent-600: #c48808;
+  --color-accent-700: #936606;
+  --color-accent-800: #624404;
+  --color-accent-900: #312202;
+  --color-accent-950: #181101;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-background-700);
+  background-color: var(--color-background-50);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+}
